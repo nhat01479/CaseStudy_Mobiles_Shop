@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="website.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-header">
+        <div class="header-top">            
+        </div>
+        <div class="header-bottom">
+            <div class="header-bottom-1">
+                <img src="images/codegym1.png" alt="">                
+            </div>
+            <div class="header-bottom-2">
+                <input type="text" placeholder="Tìm kiếm">
+                <button id="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>                
+            </div>
+            <div class="header-bottom-3">&nbsp;<button title="Click để ẩn/hiện giỏ hàng" type="button" onclick="showCart()"><i class="fa-sharp fa-solid fa-cart-plus"></i></button></div>
+        </div>
+    </div>
+    <div class="container-banner">
+        <div>
+            <img src="images/Smartphone Flash Sale.png" alt="">
+        </div>
+        <div>
+            <img src="images/ssbanner.jpg" alt="">
+        </div>
+    </div>
+    <div class="container-body">
+        <div class="body">           
+            <div class="body-product">
+                <!-- <div class="product">
+                    <div class="product-img">
+                        <img id='img' src="images/IP14PMX.jpg" alt="">         
+                    </div>
+                    <p>Tên: Iphone 14 Pro Max</p>                
+                    <p>Màn hình: 6.7 inches</p>                
+                    <p>Bộ nhớ: 128GB</p>                
+                    <p>Giá: 29900000</p>                
+                    <p>RAM: 6GB</p>                
+                    <p>Camera: 48MP & 12 MP</p>                
+                    <p>Pin: 4323 mAh</p> 
+                </div>                -->
+            </div>
+        </div>
+    </div>
+    <div class="form-div">    
+        <form class="form">
+            <table width="100%">
+                <caption><h3 style="text-align: center; color: blue;">Giỏ hàng</h3></caption>
+                <thead>
+                    <tr style="text-align: center;">
+                        <td>Sản phẩm</td>
+                        <td>Giá</td>
+                        <td>SL</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td>iPhone 14 Pro Max</td>
+                        <td style="text-align: right;"><span>1200000</span><sup>đ</sup></td>
+                        <td style="text-align: right;"><input type="number" min="1" style="width:30px"></td>
+                        <td ><button class="remove-cart" type='button' style="width:40px">Xoá</button></td>
+                    </tr> -->                    
+                </tbody>
+                <tfoot class="totalCart">
+                    <tr style="font-weight: bolder;">                  
+                        <td style="text-align: center;">Tổng cộng</td>
+                        <td style="text-align: center;"><span>0</span><sup>đ</sup></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr><td colspan="4" style="text-align: center; padding: 10px;"><button type="button" id="checkout" onclick="handleCheckout()">Thanh toán</button></td></tr>
+                </tfoot>
+            </table>
+                                        
+        </form>
+    </div>
+
+    <div class="container-foot">
+        
+            <div class="info-bar-top">
+                <div style="width:70%">
+                    <img src="images/CodeGym-3-02-copy-removebg-preview.png" alt="">
+                    <p>Huế: Tầng 4, 28 Nguyễn Tri Phương, Phường Phú Nhuận, TP Huế, TTH.</p>
+                    <p>Huế: Tầng 4, 28 Nguyễn Tri Phương, Phường Phú Nhuận, TP Huế, TTH.</p>
+                    <p>Huế: Tầng 4, 28 Nguyễn Tri Phương, Phường Phú Nhuận, TP Huế, TTH.</p>
+                    <p>Huế: Tầng 4, 28 Nguyễn Tri Phương, Phường Phú Nhuận, TP Huế, TTH.</p>
+                    <p>Huế: Tầng 4, 28 Nguyễn Tri Phương, Phường Phú Nhuận, TP Huế, TTH.</p>
+                </div>
+                <div style="width:30%; margin-top: 40px; font-size: large;  margin-left: 50px;">
+                    <p><b>Tổng đài hỗ trợ:</b></p>
+                    <p>Hotline: 0989 534 458</p>
+                    <p>Email: info@codegym.vn</p>
+                    <p style="font-size: 200%;"><i class="fa-brands fa-facebook" style="color: #007bff;"></i> <i class="fa-brands fa-youtube" style="color: #ff0000;"></i> <i class="fa-brands fa-linkedin" style="color: #1f5bc1;"></i></p>
+                </div>            
+            </div> 
+            <div class="info-bar-bottom">       
+                <div >Copyright by CodeGym.vn</div>
+            </div>
+    </div>
+    <div><button class="cart-bot" type="button" onclick="showCart()"><i class="fa-sharp fa-solid fa-cart-plus"></i></button></div>
+    
+   
+    <script src="website.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
