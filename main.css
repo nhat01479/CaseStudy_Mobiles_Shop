@@ -174,9 +174,10 @@ input{
 .form-div{
     display: none;
     position: fixed;
-    width: 500px;
-    left: 600px;
-    top: 200px;
+    width: 600px;
+    left: calc((100vw - 600px)/2);
+    top: calc((100vh - 500px)/2);
+    height: 500px;
     border-radius: 10px;
     background-color: #ddd;
     padding: 12px 20px;
@@ -191,6 +192,10 @@ input{
     border-radius: 10px;
     bottom: 0px;
     left: 0px;
+}
+
+#hideCartIcon:hover {
+    cursor: pointer;
 }
 .form-input{
     display: flex;
